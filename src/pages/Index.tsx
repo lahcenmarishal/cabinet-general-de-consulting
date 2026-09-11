@@ -17,7 +17,7 @@ const Index = () => {
       "@type": "ProfessionalService",
       "name": "Cabinet Général de Consulting",
       "alternateName": "CGC",
-      "url": "https://cabinetgeneraldeconsulting.ma",
+      "url": "https://cabinetgeneraldeconsulting.com",
       "description": "Cabinet de conseil stratégique spécialisé en accompagnement d'entreprises, contrôle de gestion, formation et recrutement au Maroc.",
       "foundingDate": "2002",
       "telephone": "+212701221464",

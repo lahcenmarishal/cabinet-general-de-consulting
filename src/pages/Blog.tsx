@@ -29,7 +29,7 @@ const Blog = () => {
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "Blog - Cabinet Général de Consulting",
-      "url": "https://cabinetgeneraldeconsulting.ma/blog",
+      "url": "https://cabinetgeneraldeconsulting.com/blog",
       "publisher": { "@type": "Organization", "name": "Cabinet Général de Consulting" },
       "description": "Articles et actualités sur le conseil stratégique, la gestion d'entreprise et le recrutement au Maroc.",
     },

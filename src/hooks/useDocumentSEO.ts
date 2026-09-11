@@ -9,7 +9,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = "Cabinet Général de Consulting";
-const BASE_URL = "https://cabinetgeneraldeconsulting.ma";
+const BASE_URL = "https://cabinetgeneraldeconsulting.com";
 const OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 const setMetaTag = (property: string, content: string, isOg = false) => {

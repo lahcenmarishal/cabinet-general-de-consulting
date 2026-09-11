@@ -28,9 +28,9 @@ const BlogPost = () => {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": blog.title,
-      "url": `https://cabinetgeneraldeconsulting.ma/blog/${slug}`,
+      "url": `https://cabinetgeneraldeconsulting.com/blog/${slug}`,
       "datePublished": blog.created_at,
-      "image": blog.image_url || "https://cabinetgeneraldeconsulting.ma/og-image.jpg",
+      "image": blog.image_url || "https://cabinetgeneraldeconsulting.com/og-image.jpg",
       "publisher": { "@type": "Organization", "name": "Cabinet Général de Consulting" },
     } : undefined,
   });

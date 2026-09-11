@@ -23,7 +23,7 @@ const Contact = () => {
       "@context": "https://schema.org",
       "@type": "ContactPage",
       "name": "Contact - Cabinet Général de Consulting",
-      "url": "https://cabinetgeneraldeconsulting.ma/contact",
+      "url": "https://cabinetgeneraldeconsulting.com/contact",
       "mainEntity": {
         "@type": "Organization",
         "name": "Cabinet Général de Consulting",
