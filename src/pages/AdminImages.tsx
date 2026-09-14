@@ -192,6 +192,42 @@ const AdminImages = () => {
     }
   };
 
+  const handleDeleteSection = async (sectionKey: string) => {
+    const existing = siteImages[sectionKey];
+    if (!existing) {
+      setFormData({ ...formData, [sectionKey]: { url: '', alt: '' } });
+      return;
+    }
+    if (!confirm('Supprimer cette image de la section ? Le site reviendra à l\'image par défaut.')) return;
+
+    setSaving(sectionKey);
+    try {
+      const { error } = await supabase
+        .from('site_images')
+        .delete()
+        .eq('id', existing.id);
+
+      if (error) throw error;
+
+      toast({
+        title: 'Image supprimée',
+        description: 'La section utilisera à nouveau l\'image par défaut.',
+      });
+
+      setFormData({ ...formData, [sectionKey]: { url: '', alt: '' } });
+      queryClient.invalidateQueries({ queryKey: ['site_image', sectionKey] });
+      fetchSiteImages();
+    } catch (error: any) {
+      toast({
+        title: 'Erreur',
+        description: error.message,
+        variant: 'destructive',
+      });
+    } finally {
+      setSaving(null);
+    }
+  };
+
   const handleDeleteStorageImage = async (filePath: string) => {
     if (!confirm('Êtes-vous sûr de vouloir supprimer cette image ?')) return;
 
