@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
-import { LogOut, Save, Image as ImageIcon } from 'lucide-react';
+import { LogOut, Save, Image as ImageIcon, Trash2 } from 'lucide-react';
 import ImageUpload from '@/components/admin/ImageUpload';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
