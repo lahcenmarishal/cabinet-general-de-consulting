@@ -343,14 +343,24 @@ const AdminImages = () => {
                       />
                     </div>
 
-                    <Button
-                      onClick={() => handleSaveSection(section.key)}
-                      disabled={saving === section.key}
-                      className="w-full bg-navy hover:bg-navy/90"
-                    >
-                      <Save className="w-4 h-4 mr-2" />
-                      {saving === section.key ? 'Enregistrement...' : 'Enregistrer'}
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button
+                        onClick={() => handleSaveSection(section.key)}
+                        disabled={saving === section.key}
+                        className="flex-1 bg-navy hover:bg-navy/90"
+                      >
+                        <Save className="w-4 h-4 mr-2" />
+                        {saving === section.key ? 'Enregistrement...' : 'Enregistrer'}
+                      </Button>
+                      <Button
+                        variant="destructive"
+                        onClick={() => handleDeleteSection(section.key)}
+                        disabled={saving === section.key || !siteImages[section.key]}
+                      >
+                        <Trash2 className="w-4 h-4 mr-2" />
+                        Supprimer
+                      </Button>
+                    </div>
                   </div>
                 ))}
               </div>
