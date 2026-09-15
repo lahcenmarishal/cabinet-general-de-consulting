@@ -10,7 +10,7 @@ interface SEOProps {
 
 const SITE_NAME = "Cabinet Général de Consulting";
 const BASE_URL = "https://cabinetgeneraldeconsulting.com";
-const OG_IMAGE = `${BASE_URL}/og-image.jpg`;
+const OG_IMAGE = `${BASE_URL}/og-logo-cgc.jpg`;
 
 const setMetaTag = (property: string, content: string, isOg = false) => {
   const attr = isOg ? "property" : "name";
@@ -41,6 +41,9 @@ const useDocumentSEO = ({ title, description, path = "/", type = "website", json
     setMetaTag("og:url", fullUrl, true);
     setMetaTag("og:type", type, true);
     setMetaTag("og:image", OG_IMAGE, true);
+    setMetaTag("og:image:alt", "Logo du Cabinet Général de Consulting", true);
+    setMetaTag("og:image:width", "1200", true);
+    setMetaTag("og:image:height", "630", true);
     setMetaTag("og:site_name", SITE_NAME, true);
     setMetaTag("og:locale", "fr_FR", true);
 
@@ -48,6 +51,7 @@ const useDocumentSEO = ({ title, description, path = "/", type = "website", json
     setMetaTag("twitter:title", title);
     setMetaTag("twitter:description", description);
     setMetaTag("twitter:image", OG_IMAGE);
+    setMetaTag("twitter:image:alt", "Logo du Cabinet Général de Consulting");
 
     // Canonical
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
