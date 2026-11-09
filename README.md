@@ -1,28 +1,46 @@
-# Remix of Remix of Global Experts Showcase
+# Cabinet Général de Consulting
 
-merci de consulter ce site et créer exactement un site similaire a ce site : https://www.globalexpertsconsulting.com/
-en se faisant sur l'accueil au fond de l'ecran un video comme le video de hero uploadé de https://www.globalexpertsconsulting.com/
-le site doit etre aussi basé sur les trois autres fichiers aussi le catalyseur; la brochure et organisation de pages de site. 
-le logo est uploadé en image.
-la pages d'accueil juste presente les pages mais chaque page au menu doit etre détaille de ce qui est a l'accueil.
+Site vitrine professionnel pour Cabinet Général de Consulting, spécialisé dans le conseil et l'accompagnement des entreprises.
 
-This project was built with [Lovable](https://lovable.dev).
+Site en ligne : cabinetgeneraldeconsulting.ma
 
-## Build with Lovable
+## Le problème
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3b5dab23-9b98-4bec-b204-8167185c6246).
+Les entreprises ont souvent besoin d'un accompagnement professionnel pour prendre de bonnes décisions, développer leurs activités et trouver des solutions adaptées à leurs besoins.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## La solution
 
-## Development
+Cabinet Général de Consulting présente ses services de conseil et d'accompagnement à travers une plateforme professionnelle :
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+1. Présentation du cabinet et de son expertise.
+2. Présentation des différents services proposés.
+3. Mise en relation avec les clients grâce aux différents moyens de contact.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+## Fonctionnalités
+
+- Présentation du cabinet
+- Présentation des services de consulting
+- Section expertise
+- Présentation des solutions proposées
+- Formulaire de contact
+- Intégration WhatsApp et appel
+- Design responsive
+- Interface moderne et professionnelle
+
+## Technologies
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Installation
+
+git clone https://github.com/lahcenmarishal/cabinet-general-de-consulting.git  
+cd cabinet-general-de-consulting  
+npm install  
 npm run dev
-```
+
+## Auteur
+
+Lahcen, développeur IA.
