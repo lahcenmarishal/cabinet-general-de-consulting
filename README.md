@@ -2,7 +2,6 @@
 
 Site vitrine professionnel pour Cabinet Général de Consulting, spécialisé dans le conseil et l'accompagnement des entreprises.
 
-Site en ligne : cabinetgeneraldeconsulting.ma
 
 ## Le problème
 
