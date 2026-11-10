@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+VITE_SUPABASE_URL = "https://c--3b5dab23-9b98-4bec-b204-8167185c6246-prod.lovable.cloud"
+VITE_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_FhxWvGlYUubhhXwcMiZlIA_UUrvAsWg"
